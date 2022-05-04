@@ -1,10 +1,8 @@
 #!/usr/bin/python
-import requests,random,json,time,sys,os,re
 # -----------------------------------------------------------
 # Tidak ada author Untuk Sc ini kecuali ./Kitsune yg Telah Mendesign Dengan Sempurna
-# Update 26 january 2020 21:57
+# Update 04 may 2022 17:57
 # Recode!, dosa Tanggung Sendiri
-# Thanks For MyFriends, FourX, MhankBarBar, Maulana, Rexy
 # Underground Science And Termux Tutorial Group
 # ---------------------------------------------------------------
 
@@ -71,8 +69,8 @@ class spam:
 		else:
 			return f'\x1b[91mSpamm PHD {self.nomer} {m}Fail!'
 			
-	def balaji(self):
-		urlb="https://api.cloud.altbalaji.com/accounts/mobile/verify?domain=ID"
+	def arv(self):
+		urlb="https://api.cloud.arvnithin.amma@gmail.com/accounts/mobile/verify?domain=ID"
 		kod="62"
 		ata={
 				"country_code":kod,
@@ -85,15 +83,15 @@ class spam:
 			"Save-Data":"on",
 			"User-Agent":"Mozilla/5.0 (Linux; Android 8.1.0; vivo 1718) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.89 Mobile Safari/537.36",
 			"Content-Type":"application/json;charset=UTF-8",
-			"Referer":"https://lite.altbalaji.com/subscribe?progress=input",
+			"Referer":"https://lite.arvnithin.amma@gmail.com/subscribe?progress=input",
 			"Accept-Encoding":"gzip, deflate, br",
 			"Accept-Language":"en-IN,en;q=0.9,en-GB;q=0.8,en-US;q=0.7,hi;q=0.6"
 			}
 		req=requests.post(urlb,data=json.dumps(ata),headers=head)
 		if '{"status":"ok"}' in req.text:
-			return f'\x1b[92mSpamm BALAJI {self.nomer} {h}Success!'
+			return f'\x1b[92mSpamm arv {self.nomer} {h}Success!'
 		else:
-			return f'\x1b[92mSpamm BALAJI {self.nomer} {m}Fail!'
+			return f'\x1b[92mSpamm arv {self.nomer} {m}Fail!'
 	def TokoTalk(self):
 		data='{"key":"phone","value":"'+str(self.nomer)+'"}'
 		head={
